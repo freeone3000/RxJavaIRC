@@ -44,6 +44,8 @@ public class UI {
 	public void bind(Observable<IRCMessage> messagesToDisplay) {
 		messagesToDisplay
 				.map(message -> message.getUser() + "(" + message.getChannel() + "): " + message.getMessage() + "\r\n")
-				.subscribe(textArea::append);
+				.subscribe(displayText -> {
+					SwingUtilities.invokeLater(() -> textArea.append(displayText));
+				});
 	}
 }
