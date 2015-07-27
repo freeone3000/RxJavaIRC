@@ -15,10 +15,24 @@
 	</properties>
 
 	<dependencies>
+		<!-- Reactive -->
 		<dependency>
 			<groupId>io.reactivex</groupId>
 			<artifactId>rxjava</artifactId>
 			<version>1.0.13</version>
+		</dependency>
+		<dependency>
+			<groupId>io.reactivex</groupId>
+			<artifactId>rxjava-string</artifactId>
+			<version>0.22.0</version>
+		</dependency>
+
+		<!-- Lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.4</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 </project>
