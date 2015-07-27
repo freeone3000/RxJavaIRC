@@ -26,6 +26,11 @@
 			<artifactId>rxjava-string</artifactId>
 			<version>0.22.0</version>
 		</dependency>
+		<dependency>
+			<groupId>io.reactivex</groupId>
+			<artifactId>rxswing</artifactId>
+			<version>0.24.0</version>
+		</dependency>
 
 		<!-- Lombok -->
 		<dependency>
