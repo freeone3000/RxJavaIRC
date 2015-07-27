@@ -37,6 +37,7 @@ public class UI {
 		contentPane.add(textArea, BorderLayout.CENTER);
 		contentPane.add(inputField, BorderLayout.PAGE_END);
 
+		jframe.pack();
 		jframe.setVisible(true);
 		return jframe;
 	}
