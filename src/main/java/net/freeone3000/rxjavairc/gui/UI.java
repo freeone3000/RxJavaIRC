@@ -33,9 +33,14 @@ public class UI {
 		JFrame jframe = new JFrame("IRC Client");
 		jframe.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
+		textArea.setMinimumSize(new Dimension(120, 200));
+		textArea.setPreferredSize(new Dimension(800, 600));
+		inputField.setMinimumSize(new Dimension(120, 50));
+
 		JPanel contentPane = new JPanel(new BorderLayout());
 		contentPane.add(textArea, BorderLayout.CENTER);
 		contentPane.add(inputField, BorderLayout.PAGE_END);
+		jframe.setContentPane(contentPane);
 
 		jframe.pack();
 		jframe.setVisible(true);
