@@ -48,10 +48,10 @@ public class Networking {
 				}
 		);
 
-		return lines.map(this::parseLine);
+		return lines.filter(str -> !(str == null || str.isEmpty())).map(this::parseLine);
 	}
 
 	public IRCMessage parseLine(final String line) {
-		return new IRCMessage();
+		return new IRCMessage("", "", "", line);
 	}
 }

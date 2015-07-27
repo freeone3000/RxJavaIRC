@@ -1,7 +1,13 @@
 package net.freeone3000.rxjavairc.net;
 
-/**
- * Created by James on 7/26/2015.
- */
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
 public class IRCMessage {
+	private final String server;
+	private final String user;
+	private final String channel;
+	private final String message;
 }
